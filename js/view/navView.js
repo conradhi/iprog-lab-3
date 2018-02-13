@@ -8,7 +8,10 @@ var NavView = function(container, model){
 	var dishes = model.getFullMenu();
 	var totalPrice = container.find("#totalPrice");
 	var totalPriceNav = container.find("#totalPriceNav");
-
+	
+	//New- Add +/- buttons so that we can connect to controller?
+	this.plusGuest = container.find("#plusGuest");
+	this.minusGuest = container.find("#minusGuest")
 
 	for(key in dishes){
 		var tempDish = dishes[key];
