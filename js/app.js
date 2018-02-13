@@ -146,7 +146,12 @@ $(function() {
 			div.style.display = "block";
 	}, false);
 
+	//Listener for + button
+	var plusGuest = document.getElementById("plusGuest");
+	plusGuest.addEventListener("click", function(){
+		var navControll = new NavViewController(navView, model);
 
+	}, false);
 
 
 		function view23(){
